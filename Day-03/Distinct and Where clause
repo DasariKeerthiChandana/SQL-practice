@@ -1,0 +1,14 @@
+--Platform: Codechef
+
+
+--problem(1): Distinct Companies
+select distinct company_name from Works;
+
+--problem(2): Fiction collection Size
+select count(*) as fiction_count from Books where genre='Fiction';
+
+--problem(3): List of Movies with Ratings
+select Movie_name from Cinema where Rating>7 and Rating<9;
+
+--problem(4): Handling NULL values
+select book_id,title,author,published_year from Library where rating is NULL;
